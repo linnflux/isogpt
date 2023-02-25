@@ -7,13 +7,33 @@ console.log('..........................')
 
 dotenv.config()
 
+//const { Configuration, OpenAIApi  } = require("openai");
+
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-  'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+      //apiKey: process.env.OPENAI_API_KEY,
+      apiKey: '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',
+
+});
+const openai = new OpenAIApi(configuration);
+
+const response = await openai.createCompletion({
+      model: "text-davinci-001",
+      prompt: "Write a tagline for an ice cream shop.",
+      temperature: 0.4,
+      max_tokens: 64,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+
 });
 
-console.log('APIKEY: ', process.env.OPENAI_API_KEY)
-const openai = new OpenAIApi(configuration);
+
+//const configuration = new Configuration({
+  //apiKey: process.env.OPENAI_API_KEY,
+//  'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+//});
+
+//const openai = new OpenAIApi(configuration);
 
 const app = express()
 app.use(cors())
@@ -28,6 +48,13 @@ app.get('/', async (req, res) => {
 app.post('/', async (req, res) => {
   try {
     const prompt = req.body.prompt;
+
+    const { Configuration, OpenAIApi  } = require("openai");
+
+      const configuration = new Configuration({
+            apiKey: process.env.OPENAI_API_KEY,
+
+      })
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
