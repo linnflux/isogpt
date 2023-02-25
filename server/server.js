@@ -10,9 +10,7 @@ dotenv.config()
 //const { Configuration, OpenAIApi  } = require("openai");
 
 const configuration = new Configuration({
-      //apiKey: process.env.OPENAI_API_KEY,
-      apiKey: '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',
-
+    apiKey: process.env.OPENAI_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
 
@@ -27,6 +25,7 @@ const response = await openai.createCompletion({
 
 });
 
+console.log(response)
 
 //const configuration = new Configuration({
   //apiKey: process.env.OPENAI_API_KEY,
@@ -48,13 +47,6 @@ app.get('/', async (req, res) => {
 app.post('/', async (req, res) => {
   try {
     const prompt = req.body.prompt;
-
-    const { Configuration, OpenAIApi  } = require("openai");
-
-      const configuration = new Configuration({
-            apiKey: process.env.OPENAI_API_KEY,
-
-      })
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
