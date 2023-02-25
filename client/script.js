@@ -3,8 +3,6 @@ import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
-//const nodeurl = 'http://localhost:5000/'
-const nodeurl = 'https://isogpt.onrender.com/'
 
 let loadInterval
 
@@ -88,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch(nodeurl, {
+    const response = await fetch('https://isogpt.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
