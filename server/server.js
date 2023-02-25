@@ -12,6 +12,8 @@ const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 });
 
+console.log(process.env.OPENAI_API_KEY)
+
 const app = express()
 app.use(cors())
 app.use(express.json())
@@ -23,6 +25,8 @@ app.get('/', async (req, res) => {
 })
 
 app.post('/', async (req, res) => {
+  console.log('prompt: ', req.body.prompt)
+
   try {
     const prompt = req.body.prompt;
 
