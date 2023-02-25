@@ -3,7 +3,8 @@ import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
-const nodeurl = 'http://localhost:5000/'
+//const nodeurl = 'http://localhost:5000/'
+const nodeurl = 'https://isogpt.onrender.com'
 
 let loadInterval
 
