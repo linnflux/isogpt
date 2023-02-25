@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.670519mm"
+   height="13.189698mm"
+   viewBox="0 0 30.670519 13.189698"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5, 2022-02-04)"
+   sodipodi:docname="isogpt.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-bottom="1"
+     fit-margin-right="1"
+     inkscape:zoom="4.3972503"
+     inkscape:cx="71.294555"
+     inkscape:cy="40.252428"
+     inkscape:window-width="1910"
+     inkscape:window-height="1038"
+     inkscape:window-x="1920"
+     inkscape:window-y="18"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-33.272228,-75.664059)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:-0.0238125px;word-spacing:0px;fill:#54af4d;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="42.691608"
+       y="85.235298"
+       id="text8296"><tspan
+         sodipodi:role="line"
+         id="tspan8294"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Lora;-inkscape-font-specification:'Lora Bold';fill:#54af4d;fill-opacity:1;stroke-width:0.264583"
+         x="42.691608"
+         y="85.235298"><tspan
+   style="letter-spacing:-1.16681px;fill:#54af4d;fill-opacity:1"
+   id="tspan13476">G</tspan>PT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.1916px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:Montserrat;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.379791"
+       x="34.158291"
+       y="86.228256"
+       id="text1844"><tspan
+         sodipodi:role="line"
+         id="tspan1842"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'High Tide - Demo';-inkscape-font-specification:'High Tide - Demo';fill:#ffffff;stroke-width:0.379791"
+         x="34.158291"
+         y="86.228256">Iso</tspan></text>
+  </g>
+</svg>
