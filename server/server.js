@@ -11,27 +11,6 @@ dotenv.config()
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(configuration);
-
-const response = await openai.createCompletion({
-      model: "text-davinci-001",
-      prompt: "Write a tagline for an ice cream shop.",
-      temperature: 0.4,
-      max_tokens: 64,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-
-});
-
-console.log(response)
-
-//const configuration = new Configuration({
-  //apiKey: process.env.OPENAI_API_KEY,
-//  'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
-//});
-
-//const openai = new OpenAIApi(configuration);
 
 const app = express()
 app.use(cors())
@@ -67,4 +46,4 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
+app.listen(5000, () => console.log('AI server started running'))
