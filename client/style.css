@@ -148,8 +148,7 @@ button {
 
 #contexts button {
   background-color:#40414f;
-  border-width: 2px;
-  border-color: transparent;
+  border: 2px solid transparent;
   border-radius: 2rem;
   color: #eee;
   font-size: 1.2rem;
