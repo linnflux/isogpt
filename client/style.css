@@ -146,7 +146,7 @@ button {
   background: transparent;
 }
 
-.contexts button {
+#contexts button {
   background-color:#40414f;
   border-radius: 2rem;
   color: #eee;
