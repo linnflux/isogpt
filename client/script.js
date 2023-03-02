@@ -3,6 +3,8 @@ import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
+const layman = document.getElementById('layman')
+const md = document.getElementById('md')
 
 let loadInterval
 
@@ -118,3 +120,7 @@ form.addEventListener('keyup', (e) => {
         handleSubmit(e)
     }
 })
+layman.onclick = function() {
+    layman.classList.toggle('active');
+    md.classList.remove('active');
+}
