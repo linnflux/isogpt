@@ -88,13 +88,22 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
+    // contexts logic
+    let prefix = '';
+    if (layman.classList.contains('active')) {
+        prefix = 'Respond to all prompts in laymans terms. Assume that the user has no professional medical knowledge. ';
+    }
+    if (md.classList.contains('active')) {
+        prefix = 'Respond to all prompts in professional medical detail. Assume that the user is an experienced and highly rated  medical doctor MD. ';
+    }
+
     const response = await fetch('https://isogpt.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            prompt: data.get('prompt')
+            prompt: prefix + data.get('prompt')
         })
     })
 
