@@ -148,11 +148,17 @@ button {
 
 #contexts button {
   background-color:#40414f;
+  border-width: 0px;
   border-radius: 2rem;
   color: #eee;
   font-size: 1.2rem;
   margin: 1rem;
   padding: 1rem;
+}
+
+#contexts button.active {
+    background-color: #343541;
+    border: 2px solid #40414f;
 }
 
 form img {
