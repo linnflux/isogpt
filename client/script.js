@@ -124,3 +124,7 @@ layman.onclick = function() {
     layman.classList.toggle('active');
     md.classList.remove('active');
 }
+md.onclick = function() {
+    md.classList.toggle('active');
+    layman.classList.remove('active');
+}
